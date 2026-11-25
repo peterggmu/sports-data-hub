@@ -1,0 +1,15 @@
+{
+  "id": "1896-summer",
+  "game_year": 1896,
+  "game_type": "summer",
+  "host_city_zh": "雅典",
+  "original_host_zh": null,
+  "host_changed": false,
+  "vote_type": "acclamation",
+  "vote_summary_zh": "鼓掌通过；伦敦、巴黎也曾被考虑",
+  "confirmation_votes": null,
+  "candidates": [],
+  "games_cancelled": false,
+  "notes_zh": "伦敦、巴黎也曾被考虑",
+  "updated_at": "2026-11-25"
+}

@@ -1,0 +1,15 @@
+{
+  "id": "1908-summer",
+  "game_year": 1908,
+  "game_type": "summer",
+  "host_city_zh": "伦敦",
+  "original_host_zh": "罗马",
+  "host_changed": true,
+  "vote_type": "competitive",
+  "vote_summary_zh": "罗马击败柏林、都灵，票数未公布；罗马退出后改由伦敦",
+  "confirmation_votes": null,
+  "candidates": [],
+  "games_cancelled": false,
+  "notes_zh": "竞争性投票票数未公布，不录入候选票数",
+  "updated_at": "2026-11-25"
+}

@@ -1,0 +1,15 @@
+{
+  "id": "1916-summer",
+  "game_year": 1916,
+  "game_type": "summer",
+  "host_city_zh": "柏林",
+  "original_host_zh": null,
+  "host_changed": false,
+  "vote_type": "acclamation",
+  "vote_summary_zh": "鼓掌通过；赛事因战争取消",
+  "confirmation_votes": null,
+  "candidates": [],
+  "games_cancelled": true,
+  "notes_zh": "赛事因第一次世界大战取消",
+  "updated_at": "2026-11-25"
+}

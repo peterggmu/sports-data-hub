@@ -1,0 +1,15 @@
+{
+  "id": "1912-summer",
+  "game_year": 1912,
+  "game_type": "summer",
+  "host_city_zh": "斯德哥尔摩",
+  "original_host_zh": null,
+  "host_changed": false,
+  "vote_type": "acclamation",
+  "vote_summary_zh": "柏林退出后，鼓掌通过",
+  "confirmation_votes": null,
+  "candidates": [],
+  "games_cancelled": false,
+  "notes_zh": null,
+  "updated_at": "2026-11-25"
+}

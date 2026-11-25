@@ -1,0 +1,15 @@
+{
+  "id": "1932-summer",
+  "game_year": 1932,
+  "game_type": "summer",
+  "host_city_zh": "洛杉矶",
+  "original_host_zh": null,
+  "host_changed": false,
+  "vote_type": "acclamation",
+  "vote_summary_zh": "唯一正式候选，鼓掌通过",
+  "confirmation_votes": null,
+  "candidates": [],
+  "games_cancelled": false,
+  "notes_zh": null,
+  "updated_at": "2026-11-25"
+}

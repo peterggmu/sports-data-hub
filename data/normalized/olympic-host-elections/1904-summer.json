@@ -1,0 +1,15 @@
+{
+  "id": "1904-summer",
+  "game_year": 1904,
+  "game_type": "summer",
+  "host_city_zh": "圣路易斯",
+  "original_host_zh": "芝加哥",
+  "host_changed": true,
+  "vote_type": "confirmation",
+  "vote_summary_zh": "芝加哥最初获选，后来让位；确认圣路易斯：赞成14、反对2",
+  "confirmation_votes": {"yes": 14, "no": 2, "abstain": null},
+  "candidates": [],
+  "games_cancelled": false,
+  "notes_zh": "芝加哥最初获选，后来让位",
+  "updated_at": "2026-11-25"
+}

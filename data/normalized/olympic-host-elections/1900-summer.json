@@ -1,0 +1,15 @@
+{
+  "id": "1900-summer",
+  "game_year": 1900,
+  "game_type": "summer",
+  "host_city_zh": "巴黎",
+  "original_host_zh": null,
+  "host_changed": false,
+  "vote_type": "direct",
+  "vote_summary_zh": "1894年直接确定，无竞争性投票",
+  "confirmation_votes": null,
+  "candidates": [],
+  "games_cancelled": false,
+  "notes_zh": null,
+  "updated_at": "2026-11-25"
+}

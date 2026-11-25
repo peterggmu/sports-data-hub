@@ -1,0 +1,15 @@
+{
+  "id": "1928-summer",
+  "game_year": 1928,
+  "game_type": "summer",
+  "host_city_zh": "阿姆斯特丹",
+  "original_host_zh": null,
+  "host_changed": false,
+  "vote_type": "confirmation",
+  "vote_summary_zh": "与1924年主办权通过同一提案确定",
+  "confirmation_votes": {"yes": 14, "no": 4, "abstain": 4},
+  "candidates": [],
+  "games_cancelled": false,
+  "notes_zh": "“巴黎1924＋阿姆斯特丹1928”整体提案：赞成14、反对4、弃权4",
+  "updated_at": "2026-11-25"
+}

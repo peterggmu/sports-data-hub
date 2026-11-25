@@ -1,0 +1,18 @@
+{
+  "id": "1936-summer",
+  "game_year": 1936,
+  "game_type": "summer",
+  "host_city_zh": "柏林",
+  "original_host_zh": null,
+  "host_changed": false,
+  "vote_type": "competitive",
+  "vote_summary_zh": "柏林43；巴塞罗那16",
+  "confirmation_votes": null,
+  "candidates": [
+    {"city_zh": "柏林", "round_votes": [43]},
+    {"city_zh": "巴塞罗那", "round_votes": [16]}
+  ],
+  "games_cancelled": false,
+  "notes_zh": null,
+  "updated_at": "2026-11-25"
+}
