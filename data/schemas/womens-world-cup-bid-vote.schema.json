@@ -1,0 +1,73 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/peterggmu/sports-data-hub/blob/main/data/schemas/womens-world-cup-bid-vote.schema.json",
+  "title": "WomensWorldCupBidVotes",
+  "type": "object",
+  "required": ["id", "tournament", "vote_date", "location", "vote_legend", "result", "records", "updated_at"],
+  "properties": {
+    "id": {"type": "string", "pattern": "^[0-9]{4}-womens-world-cup-bid$"},
+    "tournament": {"type": "string", "minLength": 1},
+    "edition": {"type": "string"},
+    "vote_date": {"type": "string", "format": "date"},
+    "congress": {"type": "string"},
+    "location": {"type": "string", "minLength": 1},
+    "ballot_type": {"type": "string"},
+    "winning_bid": {"type": "string"},
+    "vote_legend": {
+      "type": "object",
+      "required": ["BRA", "BNG", "NAN", "ABS"],
+      "properties": {
+        "BRA": {"type": "string"},
+        "BNG": {"type": "string"},
+        "NAN": {"type": "string"},
+        "ABS": {"type": "string"}
+      },
+      "additionalProperties": false
+    },
+    "bids": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["code", "name_en"],
+        "properties": {
+          "code": {"type": "string"},
+          "name_en": {"type": "string"}
+        },
+        "additionalProperties": false
+      }
+    },
+    "result": {
+      "type": "object",
+      "required": ["eligible_associations", "brazil", "bng", "none_of_the_bids", "abstentions", "majority_required"],
+      "properties": {
+        "eligible_associations": {"type": "integer", "minimum": 0},
+        "votes_for_bids": {"type": "integer", "minimum": 0},
+        "brazil": {"type": "integer", "minimum": 0},
+        "bng": {"type": "integer", "minimum": 0},
+        "none_of_the_bids": {"type": "integer", "minimum": 0},
+        "abstentions": {"type": "integer", "minimum": 0},
+        "majority_required": {"type": "integer", "minimum": 0}
+      },
+      "additionalProperties": false
+    },
+    "records": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["confederation", "association_en", "vote"],
+        "properties": {
+          "confederation": {"type": "string", "enum": ["AFC", "CAF", "CONCACAF", "CONMEBOL", "OFC", "UEFA"]},
+          "association_en": {"type": "string", "minLength": 1},
+          "vote": {"type": "string", "enum": ["BRA", "BNG", "NAN", "ABS"]}
+        },
+        "additionalProperties": false
+      }
+    },
+    "data_quality_notes": {
+      "type": "array",
+      "items": {"type": "string"}
+    },
+    "updated_at": {"type": "string", "format": "date"}
+  },
+  "additionalProperties": false
+}
