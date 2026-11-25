@@ -8,6 +8,7 @@
 - 奥运主办城市选举 `id` 格式：`届次年份-summer/winter`，例如 `1936-summer`、`2022-winter`。
 - 世界杯申办投票文件 `id` 格式：`YYYY-world-cup-bid`。
 - 女足世界杯申办投票文件 `id` 格式：`YYYY-womens-world-cup-bid`。
+- UNESCO 创意城市 `id` 格式：`类别slug-城市英文slug`；城市 slug 去除重音符、非字母数字统一转连字符，例如 `literature-edinburgh`、`music-ghent`、`crafts-folk-art-santa-fe`。
 - 引用字段（`league_id`、`stadium_id`、`home_team_id` 等）必须指向已存在的记录 `id`。
 - 日期字段使用 `YYYY-MM-DD`；日期时间使用 ISO 8601 并带时区偏移，例如 `2026-11-25T19:30:00+08:00`。
 - 暂缺的字段统一填 `null`，不要留空字符串或自行编造。
@@ -211,3 +212,39 @@
 - `ABS`：弃权（Abstained）
 
 数据质量约定：当原始数据与 FIFA 官方逐协会记录不一致时，`normalized` 层按官方口径修正，并在 `data_quality_notes` 中逐条说明；`raw` 层始终原样保留，不做改动。
+
+## 十、unesco-creative-city（UNESCO 创意城市）
+
+记录 UNESCO 创意城市网络（Creative Cities Network，2004 年启动）成员的创意领域、城市、国家与命名年份。称号为永久称号。
+
+| 字段 | 类型 | 必填 | 说明 |
+| --- | --- | --- | --- |
+| id | string | 是 | `类别slug-城市英文slug`，全局唯一 |
+| category_en | string | 是 | 创意领域英文名，见下方枚举 |
+| category_zh | string | 是 | 创意领域中文名 |
+| city_en | string | 是 | 城市英文名 |
+| city_zh | string | 是 | 城市中文名 |
+| country_en | string | 是 | 国家/地区英文名 |
+| country_zh | string | 是 | 国家/地区中文名 |
+| year | integer | 是 | 加入/命名年份（按官方批次） |
+| notes_zh | string \| null | 否 | 补充说明，如转换领域、年份修正 |
+| updated_at | string | 是 | 最后核对日期 |
+
+`category` 枚举（8 个创意领域）：
+
+- `Architecture`：建筑之都（2025 年新设，首批 5 城）
+- `Crafts and Folk Art`：手工艺与民间艺术之都
+- `Design`：设计之都
+- `Film`：电影之都
+- `Gastronomy`：美食之都
+- `Literature`：文学之都
+- `Media Arts`：媒体艺术之都
+- `Music`：音乐之都
+
+存储与口径约定：
+
+- `normalized/unesco-creative-cities/` 按类别拆分为 8 个 JSON 文件（`architecture.json`、`crafts-folk-art.json`、`design.json`、`film.json`、`gastronomy.json`、`literature.json`、`media-arts.json`、`music.json`），每个文件为该类别记录数组；`index.csv` 为全部记录总表。
+- 共 406 条类别记录、405 个唯一城市；格拉纳达（Granada）是唯一拥有两个领域的城市（文学之都 2014、设计之都 2023），故保留两条记录。
+- 里昂（Lyon）2008 年以媒体艺术之都入会，2023 年应其申请转为文学之都，`year` 保留入会年 2008，并在 `notes_zh` 说明。
+- 概念区分：UNESCO「世界图书之都」（World Book Capital）为每年一个、为期一年的独立项目，不属于本表，不并入。
+- 官方不同来源对总记录数存在 407/408 的口径差异（含历史领域记录与更新时间差）；本表按「当前领域」合并为 405 个唯一城市，不补造未公布城市。
