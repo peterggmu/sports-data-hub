@@ -1,0 +1,86 @@
+{
+  "schema_version": "1.0",
+  "name": "sports-data-hub 数据集注册表",
+  "description": "中央注册表：normalized 目录保持物理平铺，不设领域子目录；在此登记每个数据集的逻辑领域、记录数与各类路径，实现物理扁平、逻辑可分类。",
+  "default_branch": "main",
+  "source_type": "self-collected",
+  "updated_at": "2026-11-26",
+  "dataset_count": 5,
+  "domains": {
+    "sports": "体育",
+    "culture": "文化",
+    "society": "社会"
+  },
+  "datasets": [
+    {
+      "id": "olympic-host-elections",
+      "domain": "sports",
+      "domain_zh": "体育",
+      "name_zh": "奥运会主办城市选举",
+      "status": "active",
+      "record_count": 64,
+      "normalized_dir": "data/normalized/olympic-host-elections",
+      "index_path": "data/normalized/olympic-host-elections/index.csv",
+      "schema_path": "data/schemas/olympic-host-election.schema.json",
+      "raw_dir": "data/raw/self-collected/olympic-host-elections",
+      "source_type": "self-collected",
+      "updated_at": "2026-11-25"
+    },
+    {
+      "id": "world-cup-bid-votes",
+      "domain": "sports",
+      "domain_zh": "体育",
+      "name_zh": "2026 年世界杯申办投票",
+      "status": "active",
+      "record_count": 203,
+      "normalized_dir": "data/normalized/world-cup-bid-votes",
+      "index_path": "data/normalized/world-cup-bid-votes/index.csv",
+      "schema_path": "data/schemas/world-cup-bid-vote.schema.json",
+      "raw_dir": "data/raw/self-collected/world-cup-bid-votes",
+      "source_type": "self-collected",
+      "updated_at": "2026-11-25"
+    },
+    {
+      "id": "womens-world-cup-bid-votes",
+      "domain": "sports",
+      "domain_zh": "体育",
+      "name_zh": "2027 年女足世界杯申办投票",
+      "status": "active",
+      "record_count": 207,
+      "normalized_dir": "data/normalized/womens-world-cup-bid-votes",
+      "index_path": "data/normalized/womens-world-cup-bid-votes/index.csv",
+      "schema_path": "data/schemas/womens-world-cup-bid-vote.schema.json",
+      "raw_dir": "data/raw/self-collected/womens-world-cup-bid-votes",
+      "source_type": "self-collected",
+      "updated_at": "2026-11-25"
+    },
+    {
+      "id": "unesco-creative-cities",
+      "domain": "culture",
+      "domain_zh": "文化",
+      "name_zh": "联合国教科文组织创意城市",
+      "status": "active",
+      "record_count": 406,
+      "normalized_dir": "data/normalized/unesco-creative-cities",
+      "index_path": "data/normalized/unesco-creative-cities/index.csv",
+      "schema_path": "data/schemas/unesco-creative-city.schema.json",
+      "raw_dir": "data/raw/self-collected/unesco-creative-cities",
+      "source_type": "self-collected",
+      "updated_at": "2026-11-25"
+    },
+    {
+      "id": "soviet-largest-cities",
+      "domain": "society",
+      "domain_zh": "社会",
+      "name_zh": "苏联最大城市",
+      "status": "active",
+      "record_count": 10,
+      "normalized_dir": "data/normalized/soviet-largest-cities",
+      "index_path": "data/normalized/soviet-largest-cities/index.csv",
+      "schema_path": "data/schemas/soviet-largest-city.schema.json",
+      "raw_dir": "data/raw/self-collected/soviet-largest-cities",
+      "source_type": "self-collected",
+      "updated_at": "2026-11-26"
+    }
+  ]
+}
