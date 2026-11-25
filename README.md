@@ -16,7 +16,8 @@ sports-data-hub/
 │   │   ├── olympic-host-elections/
 │   │   ├── world-cup-bid-votes/
 │   │   ├── womens-world-cup-bid-votes/
-│   │   └── unesco-creative-cities/   # UNESCO 创意城市，按 8 个领域拆分为 JSON + index.csv
+│   │   ├── unesco-creative-cities/   # UNESCO 创意城市，按 8 个领域拆分为 JSON + index.csv
+│   │   └── soviet-largest-cities/    # 1989 苏联十大城市人口，JSON + index.csv
 │   └── schemas/          # JSON Schema 字段规范
 ├── assets/               # 队徽、球场照片等素材
 │   ├── crests/
@@ -48,4 +49,5 @@ sports-data-hub/
 - 2026 世界杯申办投票明细：[`data/normalized/world-cup-bid-votes/index.csv`](data/normalized/world-cup-bid-votes/index.csv)
 - 2027 女足世界杯申办投票明细：[`data/normalized/womens-world-cup-bid-votes/index.csv`](data/normalized/womens-world-cup-bid-votes/index.csv)
 - UNESCO 创意城市总表：[`data/normalized/unesco-creative-cities/index.csv`](data/normalized/unesco-creative-cities/index.csv)
+- 1989 苏联十大城市总表：[`data/normalized/soviet-largest-cities/index.csv`](data/normalized/soviet-largest-cities/index.csv)
 - Schema 目录：[`data/schemas/`](data/schemas/)
