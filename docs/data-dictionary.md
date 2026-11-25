@@ -6,6 +6,7 @@
 - 联赛、球队、场馆的 `id` 一经分配不可更改；实体改名时只修改名称字段。
 - 比赛 `id` 格式：`YYYY-MM-DD-主队id-客队id`，例如 `2026-11-25-team-a-team-b`。
 - 奥运主办城市选举 `id` 格式：`届次年份-summer/winter`，例如 `1936-summer`、`2022-winter`。
+- 世界杯申办投票文件 `id` 格式：`YYYY-world-cup-bid`。
 - 引用字段（`league_id`、`stadium_id`、`home_team_id` 等）必须指向已存在的记录 `id`。
 - 日期字段使用 `YYYY-MM-DD`；日期时间使用 ISO 8601 并带时区偏移，例如 `2026-11-25T19:30:00+08:00`。
 - 暂缺的字段统一填 `null`，不要留空字符串或自行编造。
@@ -107,7 +108,54 @@
 
 - `acclamation`：鼓掌通过 / 一致通过
 - `competitive`：有候选城市之间的竞争性投票
+- `competitive`：有候选城市之间的竞争性投票
 - `confirmation`：确认性表决或整体提案（含赞成/反对/弃权）
 - `direct`：直接确定，无竞争性投票
 - `mail`：邮寄表决
 - `no_election`：未举行主办地选举
+
+## 八、world-cup-bid-vote（世界杯申办投票）
+
+整个文件描述一次世界杯主办权投票事件，含元信息、结果统计与全部选票记录。
+
+顶层字段：
+
+| 字段 | 类型 | 必填 | 说明 |
+| --- | --- | --- | --- |
+| id | string | 是 | 格式 `YYYY-world-cup-bid` |
+| tournament | string | 是 | 对应世界杯名称 |
+| vote_date | string | 是 | 投票日期 |
+| congress | string | 否 | FIFA 大会届次 |
+| location | string | 是 | 投票地点 |
+| winning_bid | string | 否 | 胜出申办方 |
+| vote_legend | object | 是 | 投票代码含义，含 U/M/N/A 四项 |
+| result | object | 是 | 结果统计 |
+| records | object[] | 是 | 各足协选票 |
+| updated_at | string | 是 | 最后核对日期 |
+
+`result` 字段：
+
+| 字段 | 类型 | 说明 |
+| --- | --- | --- |
+| eligible_associations | integer | 有投票资格的协会数 |
+| valid_votes | integer | 有效票数 |
+| united_bid | integer | 联合申办得票 |
+| morocco | integer | 摩洛哥得票 |
+| none_of_the_bids | integer | 「两个申办都不支持」得票 |
+| abstentions | integer | 弃权数（不计入有效票） |
+| majority_required | integer | 当选所需票数 |
+
+`records` 字段：
+
+| 字段 | 类型 | 必填 | 说明 |
+| --- | --- | --- | --- |
+| confederation | string | 是 | 所属足联：AFC / CAF / CONCACAF / CONMEBOL / OFC / UEFA |
+| association_en | string | 是 | 足协英文名称 |
+| vote | string | 是 | 选票代码，见下 |
+
+`vote` 代码含义：
+
+- `U`：投联合申办（加拿大 / 墨西哥 / 美国）
+- `M`：投摩洛哥
+- `N`：选择「两个申办都不支持」（None of the bids），计入有效票
+- `A`：弃权（Abstained），不计入有效票
