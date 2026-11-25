@@ -1,0 +1,43 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/peterggmu/sports-data-hub/blob/main/data/schemas/olympic-host-election.schema.json",
+  "title": "OlympicHostElection",
+  "type": "object",
+  "required": ["id", "game_year", "game_type", "host_city_zh", "vote_type", "host_changed", "games_cancelled", "vote_summary_zh", "updated_at"],
+  "properties": {
+    "id": {"type": "string", "pattern": "^[0-9]{4}-(summer|winter)$"},
+    "game_year": {"type": "integer", "minimum": 1896},
+    "game_type": {"type": "string", "enum": ["summer", "winter"]},
+    "host_city_zh": {"type": "string", "minLength": 1},
+    "original_host_zh": {"type": ["string", "null"]},
+    "host_changed": {"type": "boolean"},
+    "vote_type": {"type": "string", "enum": ["acclamation", "competitive", "confirmation", "direct", "mail", "no_election"]},
+    "vote_summary_zh": {"type": "string", "minLength": 1},
+    "confirmation_votes": {
+      "type": ["object", "null"],
+      "properties": {
+        "yes": {"type": ["integer", "null"], "minimum": 0},
+        "no": {"type": ["integer", "null"], "minimum": 0},
+        "abstain": {"type": ["integer", "null"], "minimum": 0}
+      },
+      "additionalProperties": false
+    },
+    "candidates": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["city_zh", "round_votes"],
+        "properties": {
+          "city_zh": {"type": "string", "minLength": 1},
+          "round_votes": {"type": "array", "items": {"type": "integer", "minimum": 0}},
+          "runoff_votes": {"type": ["integer", "null"], "minimum": 0}
+        },
+        "additionalProperties": false
+      }
+    },
+    "games_cancelled": {"type": "boolean"},
+    "notes_zh": {"type": ["string", "null"]},
+    "updated_at": {"type": "string", "format": "date"}
+  },
+  "additionalProperties": false
+}
