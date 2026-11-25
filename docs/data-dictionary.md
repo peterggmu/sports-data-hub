@@ -7,6 +7,7 @@
 - 比赛 `id` 格式：`YYYY-MM-DD-主队id-客队id`，例如 `2026-11-25-team-a-team-b`。
 - 奥运主办城市选举 `id` 格式：`届次年份-summer/winter`，例如 `1936-summer`、`2022-winter`。
 - 世界杯申办投票文件 `id` 格式：`YYYY-world-cup-bid`。
+- 女足世界杯申办投票文件 `id` 格式：`YYYY-womens-world-cup-bid`。
 - 引用字段（`league_id`、`stadium_id`、`home_team_id` 等）必须指向已存在的记录 `id`。
 - 日期字段使用 `YYYY-MM-DD`；日期时间使用 ISO 8601 并带时区偏移，例如 `2026-11-25T19:30:00+08:00`。
 - 暂缺的字段统一填 `null`，不要留空字符串或自行编造。
@@ -158,3 +159,55 @@
 - `M`：投摩洛哥
 - `N`：选择「两个申办都不支持」（None of the bids），计入有效票
 - `A`：弃权（Abstained），不计入有效票
+
+## 九、womens-world-cup-bid-vote（女足世界杯申办投票）
+
+整个文件描述一次女足世界杯主办权投票事件，含元信息、申办方、结果统计、全部选票记录与数据质量说明。
+
+顶层字段：
+
+| 字段 | 类型 | 必填 | 说明 |
+| --- | --- | --- | --- |
+| id | string | 是 | 格式 `YYYY-womens-world-cup-bid` |
+| tournament | string | 是 | 对应女足世界杯名称 |
+| edition | string | 否 | 赛事届次，如 `10th` |
+| vote_date | string | 是 | 投票日期 |
+| congress | string | 否 | FIFA 大会届次 |
+| location | string | 是 | 投票地点 |
+| ballot_type | string | 否 | 投票方式，如 `open ballot`（公开投票） |
+| winning_bid | string | 否 | 胜出申办方 |
+| vote_legend | object | 是 | 投票代码含义，含 BRA/BNG/NAN/ABS 四项 |
+| bids | object[] | 否 | 申办方列表，含 `code`、`name_en` |
+| result | object | 是 | 结果统计 |
+| records | object[] | 是 | 各足协选票 |
+| data_quality_notes | string[] | 否 | 数据修正与口径说明，透明记录 |
+| updated_at | string | 是 | 最后核对日期 |
+
+`result` 字段：
+
+| 字段 | 类型 | 说明 |
+| --- | --- | --- |
+| eligible_associations | integer | 有投票资格的协会数 |
+| votes_for_bids | integer | 投向申办方的票数（不含 NAN 与弃权） |
+| brazil | integer | 巴西得票 |
+| bng | integer | 比荷德联合申办得票 |
+| none_of_the_bids | integer | 「两个申办都不支持」数 |
+| abstentions | integer | 弃权数 |
+| majority_required | integer | 当选所需票数 |
+
+`records` 字段：
+
+| 字段 | 类型 | 必填 | 说明 |
+| --- | --- | --- | --- |
+| confederation | string | 是 | 所属足联：AFC / CAF / CONCACAF / CONMEBOL / OFC / UEFA |
+| association_en | string | 是 | 足协英文名称 |
+| vote | string | 是 | 选票代码，见下 |
+
+`vote` 代码含义：
+
+- `BRA`：投巴西（Brazil）
+- `BNG`：投比利时 / 荷兰 / 德国联合申办（Belgium-Netherlands-Germany）
+- `NAN`：选择「两个申办都不支持」（None of the bids）
+- `ABS`：弃权（Abstained）
+
+数据质量约定：当原始数据与 FIFA 官方逐协会记录不一致时，`normalized` 层按官方口径修正，并在 `data_quality_notes` 中逐条说明；`raw` 层始终原样保留，不做改动。
