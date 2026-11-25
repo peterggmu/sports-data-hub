@@ -15,7 +15,8 @@ sports-data-hub/
 │   │   ├── matches/
 │   │   ├── olympic-host-elections/
 │   │   ├── world-cup-bid-votes/
-│   │   └── womens-world-cup-bid-votes/
+│   │   ├── womens-world-cup-bid-votes/
+│   │   └── unesco-creative-cities/   # UNESCO 创意城市，按 8 个领域拆分为 JSON + index.csv
 │   └── schemas/          # JSON Schema 字段规范
 ├── assets/               # 队徽、球场照片等素材
 │   ├── crests/
@@ -28,7 +29,7 @@ sports-data-hub/
 ## 分层规则
 
 1. **raw**：原样保存采集结果，永不覆盖，便于回溯重跑。
-2. **normalized**：按 Schema 清洗后的记录。独立实体一条一个 JSON，文件名与记录 `id` 一致；投票名册类数据按事件存为一个 JSON 并配明细 CSV；每个实体目录同时维护 `index.csv` 总表。
+2. **normalized**：按 Schema 清洗后的记录。独立实体一条一个 JSON，文件名与记录 `id` 一致；投票名册类数据按事件存为一个 JSON 并配明细 CSV；每个实体目录同时维护 `index.csv` 总表。UNESCO 创意城市按 8 个创意领域分别存为一个 JSON 数组文件，并维护全量 `index.csv`。
 3. **assets**：图片素材直接入库；视频等大文件走 Git LFS 或外部存储，仓库内只存路径。
 4. **artifacts**：成品文件本身放 Release 或云盘，目录内只保留清单和链接。
 
@@ -46,4 +47,5 @@ sports-data-hub/
 - 奥运主办城市选举总表：[`data/normalized/olympic-host-elections/index.csv`](data/normalized/olympic-host-elections/index.csv)
 - 2026 世界杯申办投票明细：[`data/normalized/world-cup-bid-votes/index.csv`](data/normalized/world-cup-bid-votes/index.csv)
 - 2027 女足世界杯申办投票明细：[`data/normalized/womens-world-cup-bid-votes/index.csv`](data/normalized/womens-world-cup-bid-votes/index.csv)
+- UNESCO 创意城市总表：[`data/normalized/unesco-creative-cities/index.csv`](data/normalized/unesco-creative-cities/index.csv)
 - Schema 目录：[`data/schemas/`](data/schemas/)
