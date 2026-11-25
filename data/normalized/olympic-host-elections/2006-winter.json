@@ -1,0 +1,18 @@
+{
+  "id": "2006-winter",
+  "game_year": 2006,
+  "game_type": "winter",
+  "host_city_zh": "都灵",
+  "original_host_zh": null,
+  "host_changed": false,
+  "vote_type": "competitive",
+  "vote_summary_zh": "都灵53；锡永36",
+  "confirmation_votes": null,
+  "candidates": [
+    {"city_zh": "都灵", "round_votes": [53]},
+    {"city_zh": "锡永", "round_votes": [36]}
+  ],
+  "games_cancelled": false,
+  "notes_zh": null,
+  "updated_at": "2026-11-25"
+}

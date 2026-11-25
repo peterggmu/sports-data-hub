@@ -1,0 +1,19 @@
+{
+  "id": "2014-winter",
+  "game_year": 2014,
+  "game_type": "winter",
+  "host_city_zh": "索契",
+  "original_host_zh": null,
+  "host_changed": false,
+  "vote_type": "competitive",
+  "vote_summary_zh": "索契34/51；平昌36/47；萨尔茨堡25",
+  "confirmation_votes": null,
+  "candidates": [
+    {"city_zh": "索契", "round_votes": [34, 51]},
+    {"city_zh": "平昌", "round_votes": [36, 47]},
+    {"city_zh": "萨尔茨堡", "round_votes": [25]}
+  ],
+  "games_cancelled": false,
+  "notes_zh": null,
+  "updated_at": "2026-11-25"
+}

@@ -1,0 +1,19 @@
+{
+  "id": "2010-winter",
+  "game_year": 2010,
+  "game_type": "winter",
+  "host_city_zh": "温哥华",
+  "original_host_zh": null,
+  "host_changed": false,
+  "vote_type": "competitive",
+  "vote_summary_zh": "温哥华40/56；平昌51/53；萨尔茨堡16",
+  "confirmation_votes": null,
+  "candidates": [
+    {"city_zh": "温哥华", "round_votes": [40, 56]},
+    {"city_zh": "平昌", "round_votes": [51, 53]},
+    {"city_zh": "萨尔茨堡", "round_votes": [16]}
+  ],
+  "games_cancelled": false,
+  "notes_zh": null,
+  "updated_at": "2026-11-25"
+}
