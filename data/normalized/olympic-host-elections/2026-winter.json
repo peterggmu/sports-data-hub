@@ -1,0 +1,18 @@
+{
+  "id": "2026-winter",
+  "game_year": 2026,
+  "game_type": "winter",
+  "host_city_zh": "米兰—科尔蒂纳丹佩佐",
+  "original_host_zh": null,
+  "host_changed": false,
+  "vote_type": "competitive",
+  "vote_summary_zh": "米兰—科尔蒂纳47；斯德哥尔摩—奥勒34",
+  "confirmation_votes": null,
+  "candidates": [
+    {"city_zh": "米兰—科尔蒂纳丹佩佐", "round_votes": [47]},
+    {"city_zh": "斯德哥尔摩—奥勒", "round_votes": [34]}
+  ],
+  "games_cancelled": false,
+  "notes_zh": null,
+  "updated_at": "2026-11-25"
+}

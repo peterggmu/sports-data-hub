@@ -1,0 +1,19 @@
+{
+  "id": "2018-winter",
+  "game_year": 2018,
+  "game_type": "winter",
+  "host_city_zh": "平昌",
+  "original_host_zh": null,
+  "host_changed": false,
+  "vote_type": "competitive",
+  "vote_summary_zh": "平昌63；慕尼黑25；安纳西7",
+  "confirmation_votes": null,
+  "candidates": [
+    {"city_zh": "平昌", "round_votes": [63]},
+    {"city_zh": "慕尼黑", "round_votes": [25]},
+    {"city_zh": "安纳西", "round_votes": [7]}
+  ],
+  "games_cancelled": false,
+  "notes_zh": null,
+  "updated_at": "2026-11-25"
+}

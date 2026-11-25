@@ -1,0 +1,15 @@
+{
+  "id": "2030-winter",
+  "game_year": 2030,
+  "game_type": "winter",
+  "host_city_zh": "法国阿尔卑斯山地区",
+  "original_host_zh": null,
+  "host_changed": false,
+  "vote_type": "confirmation",
+  "vote_summary_zh": "确认性表决：赞成84、反对4、弃权7",
+  "confirmation_votes": {"yes": 84, "no": 4, "abstain": 7},
+  "candidates": [],
+  "games_cancelled": false,
+  "notes_zh": null,
+  "updated_at": "2026-11-25"
+}
