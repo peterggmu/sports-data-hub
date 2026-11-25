@@ -9,6 +9,7 @@
 - 世界杯申办投票文件 `id` 格式：`YYYY-world-cup-bid`。
 - 女足世界杯申办投票文件 `id` 格式：`YYYY-womens-world-cup-bid`。
 - UNESCO 创意城市 `id` 格式：`类别slug-城市英文slug`；城市 slug 去除重音符、非字母数字统一转连字符，例如 `literature-edinburgh`、`music-ghent`、`crafts-folk-art-santa-fe`。
+- 苏联最大城市 `id` 格式：`soviet-largest-cities-当时城市英文slug`，例如 `soviet-largest-cities-moscow`、`soviet-largest-cities-leningrad`。
 - 引用字段（`league_id`、`stadium_id`、`home_team_id` 等）必须指向已存在的记录 `id`。
 - 日期字段使用 `YYYY-MM-DD`；日期时间使用 ISO 8601 并带时区偏移，例如 `2026-11-25T19:30:00+08:00`。
 - 暂缺的字段统一填 `null`，不要留空字符串或自行编造。
@@ -248,3 +249,32 @@
 - 里昂（Lyon）2008 年以媒体艺术之都入会，2023 年应其申请转为文学之都，`year` 保留入会年 2008，并在 `notes_zh` 说明。
 - 概念区分：UNESCO「世界图书之都」（World Book Capital）为每年一个、为期一年的独立项目，不属于本表，不并入。
 - 官方不同来源对总记录数存在 407/408 的口径差异（含历史领域记录与更新时间差）；本表按「当前领域」合并为 405 个唯一城市，不补造未公布城市。
+
+## 十一、soviet-largest-city（1989 年苏联十大城市）
+
+记录 1989 年苏联人口普查中人口最多的十个城市，含当时名称、现用名、当时加盟共和国、现属国家与 1979/1989 两次普查人口。
+
+| 字段 | 类型 | 必填 | 说明 |
+| --- | --- | --- | --- |
+| id | string | 是 | `soviet-largest-cities-` + 当时城市英文 slug |
+| rank | integer | 是 | 按 1989 年普查人口排名，1–10 |
+| city_zh | string | 是 | 1989 年时城市中文名 |
+| city_ru | string | 是 | 1989 年时城市俄文名（西里尔字母） |
+| city_en | string | 是 | 1989 年时城市英文名（苏联时期罗马化拼写） |
+| current_city_zh | string | 是 | 现用中文名；未改名者与 city_zh 相同 |
+| current_city_en | string | 是 | 现用英文名；未改名者与 city_en 相同 |
+| republic_zh | string | 是 | 当时所属加盟共和国中文名 |
+| country_zh | string | 是 | 现属主权国家中文名 |
+| country_en | string | 是 | 现属主权国家英文名 |
+| population_1989 | integer | 是 | 1989 年普查人口 |
+| population_1979 | integer | 是 | 1979 年普查人口 |
+| change_rate | number | 是 | 变化率小数，=(1989-1979)/1979，保留三位小数 |
+| change_pct | string | 是 | 变化率百分比字符串，如 12.0% |
+| updated_at | string | 是 | 最后核对日期 |
+
+名称与口径约定：
+
+- 解体后三处城市改名：列宁格勒 → 圣彼得堡（1991）、高尔基 → 下诺夫哥罗德（1990）、斯维尔德洛夫斯克 → 叶卡捷琳堡（1991）。
+- 基辅、哈尔科夫的英文罗马化由苏联时期的 Kiev、Kharkov 改为乌克兰官方拼写 Kyiv、Kharkiv，中文不变。
+- 1989 年为苏联最后一次全联盟普查；十城分属 5 个加盟共和国：俄罗斯 5、乌克兰 2，乌兹别克、白俄罗斯、格鲁吉亚各 1。
+- 人口与变化率均按原表口径，未做外部调整；变化率经重算核对无误。
