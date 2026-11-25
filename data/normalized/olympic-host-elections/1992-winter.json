@@ -1,0 +1,23 @@
+{
+  "id": "1992-winter",
+  "game_year": 1992,
+  "game_type": "winter",
+  "host_city_zh": "阿尔贝维尔",
+  "original_host_zh": null,
+  "host_changed": false,
+  "vote_type": "competitive",
+  "vote_summary_zh": "阿尔贝维尔19/26/29/42/51；索非亚25/25/28/24/25；法伦10/11/11/9/9；利勒哈默尔10/11/9/9；科尔蒂纳丹佩佐7/6/7；安克雷奇7/5；贝希特斯加登6。加赛：法伦41、利勒哈默尔40",
+  "confirmation_votes": null,
+  "candidates": [
+    {"city_zh": "阿尔贝维尔", "round_votes": [19, 26, 29, 42, 51]},
+    {"city_zh": "索非亚", "round_votes": [25, 25, 28, 24, 25]},
+    {"city_zh": "法伦", "round_votes": [10, 11, 11, 9], "runoff_votes": 41},
+    {"city_zh": "利勒哈默尔", "round_votes": [10, 11, 9, 9], "runoff_votes": 40},
+    {"city_zh": "科尔蒂纳丹佩佐", "round_votes": [7, 6, 7]},
+    {"city_zh": "安克雷奇", "round_votes": [7, 5]},
+    {"city_zh": "贝希特斯加登", "round_votes": [6]}
+  ],
+  "games_cancelled": false,
+  "notes_zh": "加赛：法伦41、利勒哈默尔40",
+  "updated_at": "2026-11-25"
+}

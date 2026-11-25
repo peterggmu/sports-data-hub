@@ -1,0 +1,20 @@
+{
+  "id": "1994-winter",
+  "game_year": 1994,
+  "game_type": "winter",
+  "host_city_zh": "利勒哈默尔",
+  "original_host_zh": null,
+  "host_changed": false,
+  "vote_type": "competitive",
+  "vote_summary_zh": "利勒哈默尔25/30/45；厄斯特松德19/33/39；安克雷奇23/22；索非亚17",
+  "confirmation_votes": null,
+  "candidates": [
+    {"city_zh": "利勒哈默尔", "round_votes": [25, 30, 45]},
+    {"city_zh": "厄斯特松德", "round_votes": [19, 33, 39]},
+    {"city_zh": "安克雷奇", "round_votes": [23, 22]},
+    {"city_zh": "索非亚", "round_votes": [17]}
+  ],
+  "games_cancelled": false,
+  "notes_zh": null,
+  "updated_at": "2026-11-25"
+}

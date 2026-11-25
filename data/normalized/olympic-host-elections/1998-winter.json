@@ -1,0 +1,21 @@
+{
+  "id": "1998-winter",
+  "game_year": 1998,
+  "game_type": "winter",
+  "host_city_zh": "长野",
+  "original_host_zh": null,
+  "host_changed": false,
+  "vote_type": "competitive",
+  "vote_summary_zh": "长野21/30/36/46；盐湖城15/27/29/42；厄斯特松德18/25/23；哈卡19/5；奥斯塔15。加赛：盐湖城59、奥斯塔29",
+  "confirmation_votes": null,
+  "candidates": [
+    {"city_zh": "长野", "round_votes": [21, 30, 36, 46]},
+    {"city_zh": "盐湖城", "round_votes": [15, 27, 29, 42], "runoff_votes": 59},
+    {"city_zh": "厄斯特松德", "round_votes": [18, 25, 23]},
+    {"city_zh": "哈卡", "round_votes": [19, 5]},
+    {"city_zh": "奥斯塔", "round_votes": [15], "runoff_votes": 29}
+  ],
+  "games_cancelled": false,
+  "notes_zh": "加赛：盐湖城59、奥斯塔29",
+  "updated_at": "2026-11-25"
+}

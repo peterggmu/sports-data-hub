@@ -1,0 +1,19 @@
+{
+  "id": "1984-winter",
+  "game_year": 1984,
+  "game_type": "winter",
+  "host_city_zh": "萨拉热窝",
+  "original_host_zh": null,
+  "host_changed": false,
+  "vote_type": "competitive",
+  "vote_summary_zh": "萨拉热窝31/39；札幌33/36；哥德堡10",
+  "confirmation_votes": null,
+  "candidates": [
+    {"city_zh": "萨拉热窝", "round_votes": [31, 39]},
+    {"city_zh": "札幌", "round_votes": [33, 36]},
+    {"city_zh": "哥德堡", "round_votes": [10]}
+  ],
+  "games_cancelled": false,
+  "notes_zh": null,
+  "updated_at": "2026-11-25"
+}

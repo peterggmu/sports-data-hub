@@ -1,0 +1,19 @@
+{
+  "id": "1988-winter",
+  "game_year": 1988,
+  "game_type": "winter",
+  "host_city_zh": "卡尔加里",
+  "original_host_zh": null,
+  "host_changed": false,
+  "vote_type": "competitive",
+  "vote_summary_zh": "卡尔加里35/48；法伦25/31；科尔蒂纳丹佩佐18",
+  "confirmation_votes": null,
+  "candidates": [
+    {"city_zh": "卡尔加里", "round_votes": [35, 48]},
+    {"city_zh": "法伦", "round_votes": [25, 31]},
+    {"city_zh": "科尔蒂纳丹佩佐", "round_votes": [18]}
+  ],
+  "games_cancelled": false,
+  "notes_zh": null,
+  "updated_at": "2026-11-25"
+}
