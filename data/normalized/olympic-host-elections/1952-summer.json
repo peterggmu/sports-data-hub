@@ -1,0 +1,23 @@
+{
+  "id": "1952-summer",
+  "game_year": 1952,
+  "game_type": "summer",
+  "host_city_zh": "赫尔辛基",
+  "original_host_zh": null,
+  "host_changed": false,
+  "vote_type": "competitive",
+  "vote_summary_zh": "赫尔辛基14/15；洛杉矶4/5；明尼阿波利斯4/5；阿姆斯特丹3/3；底特律2；芝加哥1；费城0",
+  "confirmation_votes": null,
+  "candidates": [
+    {"city_zh": "赫尔辛基", "round_votes": [14, 15]},
+    {"city_zh": "洛杉矶", "round_votes": [4, 5]},
+    {"city_zh": "明尼阿波利斯", "round_votes": [4, 5]},
+    {"city_zh": "阿姆斯特丹", "round_votes": [3, 3]},
+    {"city_zh": "底特律", "round_votes": [2]},
+    {"city_zh": "芝加哥", "round_votes": [1]},
+    {"city_zh": "费城", "round_votes": [0]}
+  ],
+  "games_cancelled": false,
+  "notes_zh": null,
+  "updated_at": "2026-11-25"
+}

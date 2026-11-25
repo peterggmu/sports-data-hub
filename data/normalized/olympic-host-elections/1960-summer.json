@@ -1,0 +1,23 @@
+{
+  "id": "1960-summer",
+  "game_year": 1960,
+  "game_type": "summer",
+  "host_city_zh": "罗马",
+  "original_host_zh": null,
+  "host_changed": false,
+  "vote_type": "competitive",
+  "vote_summary_zh": "罗马15/26/35；洛桑14/21/24；底特律6/11；布达佩斯8/1；布鲁塞尔6；墨西哥城6；东京4",
+  "confirmation_votes": null,
+  "candidates": [
+    {"city_zh": "罗马", "round_votes": [15, 26, 35]},
+    {"city_zh": "洛桑", "round_votes": [14, 21, 24]},
+    {"city_zh": "底特律", "round_votes": [6, 11]},
+    {"city_zh": "布达佩斯", "round_votes": [8, 1]},
+    {"city_zh": "布鲁塞尔", "round_votes": [6]},
+    {"city_zh": "墨西哥城", "round_votes": [6]},
+    {"city_zh": "东京", "round_votes": [4]}
+  ],
+  "games_cancelled": false,
+  "notes_zh": null,
+  "updated_at": "2026-11-25"
+}

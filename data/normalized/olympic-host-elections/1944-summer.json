@@ -1,0 +1,20 @@
+{
+  "id": "1944-summer",
+  "game_year": 1944,
+  "game_type": "summer",
+  "host_city_zh": "伦敦",
+  "original_host_zh": null,
+  "host_changed": false,
+  "vote_type": "competitive",
+  "vote_summary_zh": "伦敦20；罗马11；底特律2；洛桑1；赛事取消",
+  "confirmation_votes": null,
+  "candidates": [
+    {"city_zh": "伦敦", "round_votes": [20]},
+    {"city_zh": "罗马", "round_votes": [11]},
+    {"city_zh": "底特律", "round_votes": [2]},
+    {"city_zh": "洛桑", "round_votes": [1]}
+  ],
+  "games_cancelled": true,
+  "notes_zh": "赛事因第二次世界大战取消",
+  "updated_at": "2026-11-25"
+}

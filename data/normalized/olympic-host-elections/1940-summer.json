@@ -1,0 +1,18 @@
+{
+  "id": "1940-summer",
+  "game_year": 1940,
+  "game_type": "summer",
+  "host_city_zh": "赫尔辛基",
+  "original_host_zh": "东京",
+  "host_changed": true,
+  "vote_type": "competitive",
+  "vote_summary_zh": "东京36；赫尔辛基27；东京退出后改授赫尔辛基，赛事最终取消",
+  "confirmation_votes": null,
+  "candidates": [
+    {"city_zh": "东京", "round_votes": [36]},
+    {"city_zh": "赫尔辛基", "round_votes": [27]}
+  ],
+  "games_cancelled": true,
+  "notes_zh": "东京退出后改授赫尔辛基；赛事因第二次世界大战取消",
+  "updated_at": "2026-11-25"
+}

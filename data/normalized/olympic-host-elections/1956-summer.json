@@ -1,0 +1,24 @@
+{
+  "id": "1956-summer",
+  "game_year": 1956,
+  "game_type": "summer",
+  "host_city_zh": "墨尔本",
+  "original_host_zh": null,
+  "host_changed": false,
+  "vote_type": "competitive",
+  "vote_summary_zh": "墨尔本14/18/19/21；布宜诺斯艾利斯9/12/13/20；洛杉矶5/4/5；底特律2/4/4；墨西哥城9/3；芝加哥、明尼阿波利斯、费城各1",
+  "confirmation_votes": null,
+  "candidates": [
+    {"city_zh": "墨尔本", "round_votes": [14, 18, 19, 21]},
+    {"city_zh": "布宜诺斯艾利斯", "round_votes": [9, 12, 13, 20]},
+    {"city_zh": "洛杉矶", "round_votes": [5, 4, 5]},
+    {"city_zh": "底特律", "round_votes": [2, 4, 4]},
+    {"city_zh": "墨西哥城", "round_votes": [9, 3]},
+    {"city_zh": "芝加哥", "round_votes": [1]},
+    {"city_zh": "明尼阿波利斯", "round_votes": [1]},
+    {"city_zh": "费城", "round_votes": [1]}
+  ],
+  "games_cancelled": false,
+  "notes_zh": null,
+  "updated_at": "2026-11-25"
+}
