@@ -1,0 +1,20 @@
+{
+  "id": "1964-summer",
+  "game_year": 1964,
+  "game_type": "summer",
+  "host_city_zh": "东京",
+  "original_host_zh": null,
+  "host_changed": false,
+  "vote_type": "competitive",
+  "vote_summary_zh": "东京34；底特律10；维也纳9；布鲁塞尔5",
+  "confirmation_votes": null,
+  "candidates": [
+    {"city_zh": "东京", "round_votes": [34]},
+    {"city_zh": "底特律", "round_votes": [10]},
+    {"city_zh": "维也纳", "round_votes": [9]},
+    {"city_zh": "布鲁塞尔", "round_votes": [5]}
+  ],
+  "games_cancelled": false,
+  "notes_zh": null,
+  "updated_at": "2026-11-25"
+}

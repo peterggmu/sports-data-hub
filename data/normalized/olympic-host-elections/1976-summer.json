@@ -1,0 +1,19 @@
+{
+  "id": "1976-summer",
+  "game_year": 1976,
+  "game_type": "summer",
+  "host_city_zh": "蒙特利尔",
+  "original_host_zh": null,
+  "host_changed": false,
+  "vote_type": "competitive",
+  "vote_summary_zh": "蒙特利尔25/41；莫斯科28/28；洛杉矶17",
+  "confirmation_votes": null,
+  "candidates": [
+    {"city_zh": "蒙特利尔", "round_votes": [25, 41]},
+    {"city_zh": "莫斯科", "round_votes": [28, 28]},
+    {"city_zh": "洛杉矶", "round_votes": [17]}
+  ],
+  "games_cancelled": false,
+  "notes_zh": null,
+  "updated_at": "2026-11-25"
+}

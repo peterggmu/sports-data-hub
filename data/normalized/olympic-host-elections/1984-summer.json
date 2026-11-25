@@ -1,0 +1,15 @@
+{
+  "id": "1984-summer",
+  "game_year": 1984,
+  "game_type": "summer",
+  "host_city_zh": "洛杉矶",
+  "original_host_zh": null,
+  "host_changed": false,
+  "vote_type": "mail",
+  "vote_summary_zh": "唯一候选；邮寄确认：赞成75、反对3、弃权6",
+  "confirmation_votes": {"yes": 75, "no": 3, "abstain": 6},
+  "candidates": [],
+  "games_cancelled": false,
+  "notes_zh": null,
+  "updated_at": "2026-11-25"
+}

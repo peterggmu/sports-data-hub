@@ -1,0 +1,20 @@
+{
+  "id": "1972-summer",
+  "game_year": 1972,
+  "game_type": "summer",
+  "host_city_zh": "慕尼黑",
+  "original_host_zh": null,
+  "host_changed": false,
+  "vote_type": "competitive",
+  "vote_summary_zh": "慕尼黑21/31；蒙特利尔16/15；马德里16/13；底特律6",
+  "confirmation_votes": null,
+  "candidates": [
+    {"city_zh": "慕尼黑", "round_votes": [21, 31]},
+    {"city_zh": "蒙特利尔", "round_votes": [16, 15]},
+    {"city_zh": "马德里", "round_votes": [16, 13]},
+    {"city_zh": "底特律", "round_votes": [6]}
+  ],
+  "games_cancelled": false,
+  "notes_zh": null,
+  "updated_at": "2026-11-25"
+}
