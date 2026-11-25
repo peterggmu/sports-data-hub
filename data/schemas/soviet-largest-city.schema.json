@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/peterggmu/sports-data-hub/blob/main/data/schemas/soviet-largest-city.schema.json",
+  "title": "SovietLargestCity",
+  "description": "一条记录代表 1989 年苏联人口普查中人口最多的十大城市之一，含当时名称、现用名、现属国家与两次普查人口。",
+  "type": "object",
+  "required": [
+    "id",
+    "rank",
+    "city_zh",
+    "city_ru",
+    "city_en",
+    "current_city_zh",
+    "current_city_en",
+    "republic_zh",
+    "country_zh",
+    "country_en",
+    "population_1989",
+    "population_1979",
+    "change_rate",
+    "change_pct",
+    "updated_at"
+  ],
+  "properties": {
+    "id": {"type": "string", "minLength": 1, "description": "稳定标识：soviet-largest-cities- + 当时城市英文 slug。"},
+    "rank": {"type": "integer", "minimum": 1, "maximum": 10, "description": "按 1989 年普查人口排名。"},
+    "city_zh": {"type": "string", "minLength": 1, "description": "1989 年时城市中文名。"},
+    "city_ru": {"type": "string", "minLength": 1, "description": "1989 年时城市俄文名（西里尔字母）。"},
+    "city_en": {"type": "string", "minLength": 1, "description": "1989 年时城市英文名（苏联时期罗马化拼写）。"},
+    "current_city_zh": {"type": "string", "minLength": 1, "description": "现用中文名；未改名者与 city_zh 相同。"},
+    "current_city_en": {"type": "string", "minLength": 1, "description": "现用英文名；未改名者与 city_en 相同。"},
+    "republic_zh": {"type": "string", "minLength": 1, "description": "当时所属加盟共和国中文名。"},
+    "country_zh": {"type": "string", "minLength": 1, "description": "现属主权国家中文名。"},
+    "country_en": {"type": "string", "minLength": 1, "description": "现属主权国家英文名。"},
+    "population_1989": {"type": "integer", "minimum": 0, "description": "1989 年普查人口。"},
+    "population_1979": {"type": "integer", "minimum": 0, "description": "1979 年普查人口。"},
+    "change_rate": {"type": "number", "description": "两次普查间人口变化率（小数），=(1989-1979)/1979，保留三位小数。"},
+    "change_pct": {"type": "string", "pattern": "^[0-9]+\\.[0-9]%$", "description": "变化率百分比字符串，如 12.0%。"},
+    "updated_at": {"type": "string", "format": "date"}
+  },
+  "additionalProperties": false
+}
