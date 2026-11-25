@@ -1,0 +1,55 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/peterggmu/sports-data-hub/blob/main/data/schemas/unesco-creative-city.schema.json",
+  "title": "UNESCOCreativeCity",
+  "description": "一条记录代表一个城市在 UNESCO 创意城市网络（UCCN）中的一个当前类别归属。",
+  "type": "object",
+  "required": [
+    "id",
+    "category_en",
+    "category_zh",
+    "city_en",
+    "city_zh",
+    "country_en",
+    "country_zh",
+    "year",
+    "updated_at"
+  ],
+  "properties": {
+    "id": {"type": "string", "minLength": 1, "description": "稳定标识：类别英文小写连字符 + 城市英文 slug。"},
+    "category_en": {
+      "type": "string",
+      "enum": [
+        "Architecture",
+        "Crafts and Folk Art",
+        "Design",
+        "Film",
+        "Gastronomy",
+        "Literature",
+        "Media Arts",
+        "Music"
+      ]
+    },
+    "category_zh": {
+      "type": "string",
+      "enum": [
+        "建筑之都",
+        "手工艺与民间艺术之都",
+        "设计之都",
+        "电影之都",
+        "美食之都",
+        "文学之都",
+        "媒体艺术之都",
+        "音乐之都"
+      ]
+    },
+    "city_en": {"type": "string", "minLength": 1},
+    "city_zh": {"type": "string", "minLength": 1},
+    "country_en": {"type": "string", "minLength": 1},
+    "country_zh": {"type": "string", "minLength": 1},
+    "year": {"type": "integer", "minimum": 2004, "maximum": 2025, "description": "城市加入网络的年份（Lyon 保留 2008 入会年，2023 转换类别见 notes）。"},
+    "notes_zh": {"type": ["string", "null"]},
+    "updated_at": {"type": "string", "format": "date"}
+  },
+  "additionalProperties": false
+}
