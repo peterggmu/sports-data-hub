@@ -1,0 +1,15 @@
+{
+  "id": "1928-winter",
+  "game_year": 1928,
+  "game_type": "winter",
+  "host_city_zh": "圣莫里茨",
+  "original_host_zh": null,
+  "host_changed": false,
+  "vote_type": "confirmation",
+  "vote_summary_zh": "赞成22、弃权1；达沃斯、恩格尔贝格也提出方案",
+  "confirmation_votes": {"yes": 22, "no": null, "abstain": 1},
+  "candidates": [],
+  "games_cancelled": false,
+  "notes_zh": "达沃斯、恩格尔贝格也提出方案",
+  "updated_at": "2026-11-25"
+}

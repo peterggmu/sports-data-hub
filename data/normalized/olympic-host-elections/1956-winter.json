@@ -1,0 +1,20 @@
+{
+  "id": "1956-winter",
+  "game_year": 1956,
+  "game_type": "winter",
+  "host_city_zh": "科尔蒂纳丹佩佐",
+  "original_host_zh": null,
+  "host_changed": false,
+  "vote_type": "competitive",
+  "vote_summary_zh": "科尔蒂纳丹佩佐31；蒙特利尔7；科罗拉多斯普林斯2；普莱西德湖1",
+  "confirmation_votes": null,
+  "candidates": [
+    {"city_zh": "科尔蒂纳丹佩佐", "round_votes": [31]},
+    {"city_zh": "蒙特利尔", "round_votes": [7]},
+    {"city_zh": "科罗拉多斯普林斯", "round_votes": [2]},
+    {"city_zh": "普莱西德湖", "round_votes": [1]}
+  ],
+  "games_cancelled": false,
+  "notes_zh": null,
+  "updated_at": "2026-11-25"
+}

@@ -1,0 +1,19 @@
+{
+  "id": "1952-winter",
+  "game_year": 1952,
+  "game_type": "winter",
+  "host_city_zh": "奥斯陆",
+  "original_host_zh": null,
+  "host_changed": false,
+  "vote_type": "competitive",
+  "vote_summary_zh": "奥斯陆18；科尔蒂纳丹佩佐9；普莱西德湖1",
+  "confirmation_votes": null,
+  "candidates": [
+    {"city_zh": "奥斯陆", "round_votes": [18]},
+    {"city_zh": "科尔蒂纳丹佩佐", "round_votes": [9]},
+    {"city_zh": "普莱西德湖", "round_votes": [1]}
+  ],
+  "games_cancelled": false,
+  "notes_zh": null,
+  "updated_at": "2026-11-25"
+}

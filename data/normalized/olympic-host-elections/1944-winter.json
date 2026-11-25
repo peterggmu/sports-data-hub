@@ -1,0 +1,19 @@
+{
+  "id": "1944-winter",
+  "game_year": 1944,
+  "game_type": "winter",
+  "host_city_zh": "科尔蒂纳丹佩佐",
+  "original_host_zh": null,
+  "host_changed": false,
+  "vote_type": "competitive",
+  "vote_summary_zh": "科尔蒂纳丹佩佐16/16；蒙特利尔11/12；奥斯陆7/2；弃权1/5；赛事取消",
+  "confirmation_votes": null,
+  "candidates": [
+    {"city_zh": "科尔蒂纳丹佩佐", "round_votes": [16, 16]},
+    {"city_zh": "蒙特利尔", "round_votes": [11, 12]},
+    {"city_zh": "奥斯陆", "round_votes": [7, 2]}
+  ],
+  "games_cancelled": true,
+  "notes_zh": "两轮弃权票分别为1、5；赛事因第二次世界大战取消",
+  "updated_at": "2026-11-25"
+}

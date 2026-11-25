@@ -1,0 +1,15 @@
+{
+  "id": "1940-winter",
+  "game_year": 1940,
+  "game_type": "winter",
+  "host_city_zh": "加米施-帕滕基兴",
+  "original_host_zh": "札幌",
+  "host_changed": true,
+  "vote_type": "acclamation",
+  "vote_summary_zh": "札幌获一致通过，后来两度更换主办地，赛事最终取消",
+  "confirmation_votes": null,
+  "candidates": [],
+  "games_cancelled": true,
+  "notes_zh": "主办地变更路径：札幌→圣莫里茨→加米施-帕滕基兴；赛事因第二次世界大战取消",
+  "updated_at": "2026-11-25"
+}
