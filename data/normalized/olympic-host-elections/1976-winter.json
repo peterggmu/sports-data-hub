@@ -1,0 +1,20 @@
+{
+  "id": "1976-winter",
+  "game_year": 1976,
+  "game_type": "winter",
+  "host_city_zh": "因斯布鲁克",
+  "original_host_zh": "丹佛",
+  "host_changed": true,
+  "vote_type": "competitive",
+  "vote_summary_zh": "丹佛29/29/39；锡永18/31/30；坦佩雷12/8；温哥华9。丹佛因公投退出，国际奥委会执委会改选因斯布鲁克",
+  "confirmation_votes": null,
+  "candidates": [
+    {"city_zh": "丹佛", "round_votes": [29, 29, 39]},
+    {"city_zh": "锡永", "round_votes": [18, 31, 30]},
+    {"city_zh": "坦佩雷", "round_votes": [12, 8]},
+    {"city_zh": "温哥华", "round_votes": [9]}
+  ],
+  "games_cancelled": false,
+  "notes_zh": "丹佛因公投退出，国际奥委会执委会改选因斯布鲁克",
+  "updated_at": "2026-11-25"
+}

@@ -1,0 +1,19 @@
+{
+  "id": "1964-winter",
+  "game_year": 1964,
+  "game_type": "winter",
+  "host_city_zh": "因斯布鲁克",
+  "original_host_zh": null,
+  "host_changed": false,
+  "vote_type": "competitive",
+  "vote_summary_zh": "因斯布鲁克49；卡尔加里9；拉赫蒂0",
+  "confirmation_votes": null,
+  "candidates": [
+    {"city_zh": "因斯布鲁克", "round_votes": [49]},
+    {"city_zh": "卡尔加里", "round_votes": [9]},
+    {"city_zh": "拉赫蒂", "round_votes": [0]}
+  ],
+  "games_cancelled": false,
+  "notes_zh": null,
+  "updated_at": "2026-11-25"
+}

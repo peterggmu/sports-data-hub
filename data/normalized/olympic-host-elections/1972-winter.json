@@ -1,0 +1,20 @@
+{
+  "id": "1972-winter",
+  "game_year": 1972,
+  "game_type": "winter",
+  "host_city_zh": "札幌",
+  "original_host_zh": null,
+  "host_changed": false,
+  "vote_type": "competitive",
+  "vote_summary_zh": "札幌32；班夫16；拉赫蒂7；盐湖城7",
+  "confirmation_votes": null,
+  "candidates": [
+    {"city_zh": "札幌", "round_votes": [32]},
+    {"city_zh": "班夫", "round_votes": [16]},
+    {"city_zh": "拉赫蒂", "round_votes": [7]},
+    {"city_zh": "盐湖城", "round_votes": [7]}
+  ],
+  "games_cancelled": false,
+  "notes_zh": null,
+  "updated_at": "2026-11-25"
+}

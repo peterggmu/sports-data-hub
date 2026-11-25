@@ -1,0 +1,22 @@
+{
+  "id": "1968-winter",
+  "game_year": 1968,
+  "game_type": "winter",
+  "host_city_zh": "格勒诺布尔",
+  "original_host_zh": null,
+  "host_changed": false,
+  "vote_type": "competitive",
+  "vote_summary_zh": "格勒诺布尔15/18/27；卡尔加里12/19/24；拉赫蒂11/14；札幌6；奥斯陆4；普莱西德湖3",
+  "confirmation_votes": null,
+  "candidates": [
+    {"city_zh": "格勒诺布尔", "round_votes": [15, 18, 27]},
+    {"city_zh": "卡尔加里", "round_votes": [12, 19, 24]},
+    {"city_zh": "拉赫蒂", "round_votes": [11, 14]},
+    {"city_zh": "札幌", "round_votes": [6]},
+    {"city_zh": "奥斯陆", "round_votes": [4]},
+    {"city_zh": "普莱西德湖", "round_votes": [3]}
+  ],
+  "games_cancelled": false,
+  "notes_zh": null,
+  "updated_at": "2026-11-25"
+}

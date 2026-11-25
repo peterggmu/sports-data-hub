@@ -1,0 +1,20 @@
+{
+  "id": "1960-winter",
+  "game_year": 1960,
+  "game_type": "winter",
+  "host_city_zh": "斯阔谷",
+  "original_host_zh": null,
+  "host_changed": false,
+  "vote_type": "competitive",
+  "vote_summary_zh": "斯阔谷30/32；因斯布鲁克24/30；加米施-帕滕基兴5；圣莫里茨3",
+  "confirmation_votes": null,
+  "candidates": [
+    {"city_zh": "斯阔谷", "round_votes": [30, 32]},
+    {"city_zh": "因斯布鲁克", "round_votes": [24, 30]},
+    {"city_zh": "加米施-帕滕基兴", "round_votes": [5]},
+    {"city_zh": "圣莫里茨", "round_votes": [3]}
+  ],
+  "games_cancelled": false,
+  "notes_zh": null,
+  "updated_at": "2026-11-25"
+}
