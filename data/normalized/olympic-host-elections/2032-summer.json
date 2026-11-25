@@ -1,0 +1,15 @@
+{
+  "id": "2032-summer",
+  "game_year": 2032,
+  "game_type": "summer",
+  "host_city_zh": "布里斯班",
+  "original_host_zh": null,
+  "host_changed": false,
+  "vote_type": "confirmation",
+  "vote_summary_zh": "确认性表决：赞成72、反对5、弃权3",
+  "confirmation_votes": {"yes": 72, "no": 5, "abstain": 3},
+  "candidates": [],
+  "games_cancelled": false,
+  "notes_zh": null,
+  "updated_at": "2026-11-25"
+}

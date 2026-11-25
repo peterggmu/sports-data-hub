@@ -1,0 +1,21 @@
+{
+  "id": "2012-summer",
+  "game_year": 2012,
+  "game_type": "summer",
+  "host_city_zh": "伦敦",
+  "original_host_zh": null,
+  "host_changed": false,
+  "vote_type": "competitive",
+  "vote_summary_zh": "伦敦22/27/39/54；巴黎21/25/33/50；马德里20/32/31；纽约19/16；莫斯科15",
+  "confirmation_votes": null,
+  "candidates": [
+    {"city_zh": "伦敦", "round_votes": [22, 27, 39, 54]},
+    {"city_zh": "巴黎", "round_votes": [21, 25, 33, 50]},
+    {"city_zh": "马德里", "round_votes": [20, 32, 31]},
+    {"city_zh": "纽约", "round_votes": [19, 16]},
+    {"city_zh": "莫斯科", "round_votes": [15]}
+  ],
+  "games_cancelled": false,
+  "notes_zh": null,
+  "updated_at": "2026-11-25"
+}

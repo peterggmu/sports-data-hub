@@ -1,0 +1,20 @@
+{
+  "id": "2016-summer",
+  "game_year": 2016,
+  "game_type": "summer",
+  "host_city_zh": "里约热内卢",
+  "original_host_zh": null,
+  "host_changed": false,
+  "vote_type": "competitive",
+  "vote_summary_zh": "里约26/46/66；马德里28/29/32；东京22/20；芝加哥18",
+  "confirmation_votes": null,
+  "candidates": [
+    {"city_zh": "里约热内卢", "round_votes": [26, 46, 66]},
+    {"city_zh": "马德里", "round_votes": [28, 29, 32]},
+    {"city_zh": "东京", "round_votes": [22, 20]},
+    {"city_zh": "芝加哥", "round_votes": [18]}
+  ],
+  "games_cancelled": false,
+  "notes_zh": null,
+  "updated_at": "2026-11-25"
+}

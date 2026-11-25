@@ -1,0 +1,19 @@
+{
+  "id": "2020-summer",
+  "game_year": 2020,
+  "game_type": "summer",
+  "host_city_zh": "东京",
+  "original_host_zh": null,
+  "host_changed": false,
+  "vote_type": "competitive",
+  "vote_summary_zh": "东京42/60；伊斯坦布尔26/36；马德里26。加赛：伊斯坦布尔49、马德里45",
+  "confirmation_votes": null,
+  "candidates": [
+    {"city_zh": "东京", "round_votes": [42, 60]},
+    {"city_zh": "伊斯坦布尔", "round_votes": [26, 36], "runoff_votes": 49},
+    {"city_zh": "马德里", "round_votes": [26], "runoff_votes": 45}
+  ],
+  "games_cancelled": false,
+  "notes_zh": "加赛：伊斯坦布尔49、马德里45",
+  "updated_at": "2026-11-25"
+}

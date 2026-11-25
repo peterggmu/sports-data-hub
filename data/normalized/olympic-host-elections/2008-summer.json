@@ -1,0 +1,21 @@
+{
+  "id": "2008-summer",
+  "game_year": 2008,
+  "game_type": "summer",
+  "host_city_zh": "北京",
+  "original_host_zh": null,
+  "host_changed": false,
+  "vote_type": "competitive",
+  "vote_summary_zh": "北京44/56；多伦多20/22；巴黎15/18；伊斯坦布尔17/9；大阪6",
+  "confirmation_votes": null,
+  "candidates": [
+    {"city_zh": "北京", "round_votes": [44, 56]},
+    {"city_zh": "多伦多", "round_votes": [20, 22]},
+    {"city_zh": "巴黎", "round_votes": [15, 18]},
+    {"city_zh": "伊斯坦布尔", "round_votes": [17, 9]},
+    {"city_zh": "大阪", "round_votes": [6]}
+  ],
+  "games_cancelled": false,
+  "notes_zh": null,
+  "updated_at": "2026-11-25"
+}
