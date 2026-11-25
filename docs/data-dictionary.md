@@ -108,7 +108,6 @@
 
 - `acclamation`：鼓掌通过 / 一致通过
 - `competitive`：有候选城市之间的竞争性投票
-- `competitive`：有候选城市之间的竞争性投票
 - `confirmation`：确认性表决或整体提案（含赞成/反对/弃权）
 - `direct`：直接确定，无竞争性投票
 - `mail`：邮寄表决
