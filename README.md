@@ -14,7 +14,8 @@ sports-data-hub/
 │   │   ├── stadiums/
 │   │   ├── matches/
 │   │   ├── olympic-host-elections/
-│   │   └── world-cup-bid-votes/
+│   │   ├── world-cup-bid-votes/
+│   │   └── womens-world-cup-bid-votes/
 │   └── schemas/          # JSON Schema 字段规范
 ├── assets/               # 队徽、球场照片等素材
 │   ├── crests/
@@ -44,4 +45,5 @@ sports-data-hub/
 - 数据字典与 ID 规则：[`docs/data-dictionary.md`](docs/data-dictionary.md)
 - 奥运主办城市选举总表：[`data/normalized/olympic-host-elections/index.csv`](data/normalized/olympic-host-elections/index.csv)
 - 2026 世界杯申办投票明细：[`data/normalized/world-cup-bid-votes/index.csv`](data/normalized/world-cup-bid-votes/index.csv)
+- 2027 女足世界杯申办投票明细：[`data/normalized/womens-world-cup-bid-votes/index.csv`](data/normalized/womens-world-cup-bid-votes/index.csv)
 - Schema 目录：[`data/schemas/`](data/schemas/)
