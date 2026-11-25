@@ -8,27 +8,15 @@
 - 每个数据集的逻辑领域（体育 / 文化 / 社会）、记录数与各类路径，统一登记在中央注册表 [`data/registry.json`](data/registry.json)，实现「物理扁平、逻辑可分类」。
 - 新增或更新数据集时，必须同步更新 `registry.json`，并使其中记录数与各目录 `index.csv` 保持一致。
 
-## 数据集清单（按领域）
+## 数据集清单
 
-### 体育 sports
-
-| 目录 | 中文名 | 记录数 |
-| --- | --- | --- |
-| olympic-host-elections | 奥运会主办城市选举 | 64 |
-| world-cup-bid-votes | 2026 年世界杯申办投票 | 203 |
-| womens-world-cup-bid-votes | 2027 年女足世界杯申办投票 | 207 |
-
-### 文化 culture
-
-| 目录 | 中文名 | 记录数 |
-| --- | --- | --- |
-| unesco-creative-cities | 联合国教科文组织创意城市 | 406 |
-
-### 社会 society
-
-| 目录 | 中文名 | 记录数 |
-| --- | --- | --- |
-| soviet-largest-cities | 苏联最大城市 | 10 |
+| 目录 | 中文名 | 领域 | 记录数 |
+| --- | --- | --- | --- |
+| olympic-host-elections | 奥运会主办城市选举 | 体育 | 64 |
+| world-cup-bid-votes | 2026 年世界杯申办投票 | 体育 | 203 |
+| womens-world-cup-bid-votes | 2027 年女足世界杯申办投票 | 体育 | 207 |
+| unesco-creative-cities | 联合国教科文组织创意城市 | 文化 | 406 |
+| soviet-largest-cities | 苏联最大城市 | 社会 | 10 |
 
 ## 目录结构
 
