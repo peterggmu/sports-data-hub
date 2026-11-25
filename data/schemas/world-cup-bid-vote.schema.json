@@ -1,0 +1,55 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/peterggmu/sports-data-hub/blob/main/data/schemas/world-cup-bid-vote.schema.json",
+  "title": "WorldCupBidVotes",
+  "type": "object",
+  "required": ["id", "tournament", "vote_date", "location", "vote_legend", "result", "records", "updated_at"],
+  "properties": {
+    "id": {"type": "string", "pattern": "^[0-9]{4}-world-cup-bid$"},
+    "tournament": {"type": "string", "minLength": 1},
+    "vote_date": {"type": "string", "format": "date"},
+    "congress": {"type": "string"},
+    "location": {"type": "string", "minLength": 1},
+    "winning_bid": {"type": "string"},
+    "vote_legend": {
+      "type": "object",
+      "required": ["U", "M", "N", "A"],
+      "properties": {
+        "U": {"type": "string"},
+        "M": {"type": "string"},
+        "N": {"type": "string"},
+        "A": {"type": "string"}
+      },
+      "additionalProperties": false
+    },
+    "result": {
+      "type": "object",
+      "required": ["eligible_associations", "valid_votes", "united_bid", "morocco", "none_of_the_bids", "abstentions", "majority_required"],
+      "properties": {
+        "eligible_associations": {"type": "integer", "minimum": 0},
+        "valid_votes": {"type": "integer", "minimum": 0},
+        "united_bid": {"type": "integer", "minimum": 0},
+        "morocco": {"type": "integer", "minimum": 0},
+        "none_of_the_bids": {"type": "integer", "minimum": 0},
+        "abstentions": {"type": "integer", "minimum": 0},
+        "majority_required": {"type": "integer", "minimum": 0}
+      },
+      "additionalProperties": false
+    },
+    "records": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["confederation", "association_en", "vote"],
+        "properties": {
+          "confederation": {"type": "string", "enum": ["AFC", "CAF", "CONCACAF", "CONMEBOL", "OFC", "UEFA"]},
+          "association_en": {"type": "string", "minLength": 1},
+          "vote": {"type": "string", "enum": ["U", "M", "N", "A"]}
+        },
+        "additionalProperties": false
+      }
+    },
+    "updated_at": {"type": "string", "format": "date"}
+  },
+  "additionalProperties": false
+}
