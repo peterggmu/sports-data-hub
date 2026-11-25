@@ -1,0 +1,21 @@
+{
+  "id": "2004-summer",
+  "game_year": 2004,
+  "game_type": "summer",
+  "host_city_zh": "雅典",
+  "original_host_zh": null,
+  "host_changed": false,
+  "vote_type": "competitive",
+  "vote_summary_zh": "雅典32/38/52/66；罗马23/28/35/41；开普敦16/22/20；斯德哥尔摩20/19；布宜诺斯艾利斯16。首轮加赛：开普敦62、布宜诺斯艾利斯44",
+  "confirmation_votes": null,
+  "candidates": [
+    {"city_zh": "雅典", "round_votes": [32, 38, 52, 66]},
+    {"city_zh": "罗马", "round_votes": [23, 28, 35, 41]},
+    {"city_zh": "开普敦", "round_votes": [16, 22, 20], "runoff_votes": 62},
+    {"city_zh": "斯德哥尔摩", "round_votes": [20, 19]},
+    {"city_zh": "布宜诺斯艾利斯", "round_votes": [16], "runoff_votes": 44}
+  ],
+  "games_cancelled": false,
+  "notes_zh": "首轮加赛：开普敦62、布宜诺斯艾利斯44",
+  "updated_at": "2026-11-25"
+}

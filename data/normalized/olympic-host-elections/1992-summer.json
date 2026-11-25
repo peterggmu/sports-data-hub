@@ -1,0 +1,22 @@
+{
+  "id": "1992-summer",
+  "game_year": 1992,
+  "game_type": "summer",
+  "host_city_zh": "巴塞罗那",
+  "original_host_zh": null,
+  "host_changed": false,
+  "vote_type": "competitive",
+  "vote_summary_zh": "巴塞罗那29/37/47；巴黎19/20/23；布里斯班11/9/10；贝尔格莱德13/11/5；伯明翰8/8；阿姆斯特丹5",
+  "confirmation_votes": null,
+  "candidates": [
+    {"city_zh": "巴塞罗那", "round_votes": [29, 37, 47]},
+    {"city_zh": "巴黎", "round_votes": [19, 20, 23]},
+    {"city_zh": "布里斯班", "round_votes": [11, 9, 10]},
+    {"city_zh": "贝尔格莱德", "round_votes": [13, 11, 5]},
+    {"city_zh": "伯明翰", "round_votes": [8, 8]},
+    {"city_zh": "阿姆斯特丹", "round_votes": [5]}
+  ],
+  "games_cancelled": false,
+  "notes_zh": null,
+  "updated_at": "2026-11-25"
+}

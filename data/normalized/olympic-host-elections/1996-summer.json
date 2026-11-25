@@ -1,0 +1,22 @@
+{
+  "id": "1996-summer",
+  "game_year": 1996,
+  "game_type": "summer",
+  "host_city_zh": "亚特兰大",
+  "original_host_zh": null,
+  "host_changed": false,
+  "vote_type": "competitive",
+  "vote_summary_zh": "亚特兰大19/20/26/34/51；雅典23/23/26/30/35；多伦多14/17/18/22；墨尔本12/21/16；曼彻斯特11/5；贝尔格莱德7",
+  "confirmation_votes": null,
+  "candidates": [
+    {"city_zh": "亚特兰大", "round_votes": [19, 20, 26, 34, 51]},
+    {"city_zh": "雅典", "round_votes": [23, 23, 26, 30, 35]},
+    {"city_zh": "多伦多", "round_votes": [14, 17, 18, 22]},
+    {"city_zh": "墨尔本", "round_votes": [12, 21, 16]},
+    {"city_zh": "曼彻斯特", "round_votes": [11, 5]},
+    {"city_zh": "贝尔格莱德", "round_votes": [7]}
+  ],
+  "games_cancelled": false,
+  "notes_zh": null,
+  "updated_at": "2026-11-25"
+}

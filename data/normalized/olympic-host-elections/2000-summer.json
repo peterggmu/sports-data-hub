@@ -1,0 +1,21 @@
+{
+  "id": "2000-summer",
+  "game_year": 2000,
+  "game_type": "summer",
+  "host_city_zh": "悉尼",
+  "original_host_zh": null,
+  "host_changed": false,
+  "vote_type": "competitive",
+  "vote_summary_zh": "悉尼30/30/37/45；北京32/37/40/43；曼彻斯特11/13/11；柏林9/9；伊斯坦布尔7",
+  "confirmation_votes": null,
+  "candidates": [
+    {"city_zh": "悉尼", "round_votes": [30, 30, 37, 45]},
+    {"city_zh": "北京", "round_votes": [32, 37, 40, 43]},
+    {"city_zh": "曼彻斯特", "round_votes": [11, 13, 11]},
+    {"city_zh": "柏林", "round_votes": [9, 9]},
+    {"city_zh": "伊斯坦布尔", "round_votes": [7]}
+  ],
+  "games_cancelled": false,
+  "notes_zh": null,
+  "updated_at": "2026-11-25"
+}

@@ -1,0 +1,18 @@
+{
+  "id": "1988-summer",
+  "game_year": 1988,
+  "game_type": "summer",
+  "host_city_zh": "首尔",
+  "original_host_zh": null,
+  "host_changed": false,
+  "vote_type": "competitive",
+  "vote_summary_zh": "首尔52；名古屋27",
+  "confirmation_votes": null,
+  "candidates": [
+    {"city_zh": "首尔", "round_votes": [52]},
+    {"city_zh": "名古屋", "round_votes": [27]}
+  ],
+  "games_cancelled": false,
+  "notes_zh": null,
+  "updated_at": "2026-11-25"
+}
