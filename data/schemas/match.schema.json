@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/peterggmu/sports-data-hub/blob/main/data/schemas/match.schema.json",
+  "title": "Match",
+  "type": "object",
+  "required": ["id", "kickoff", "sport", "league_id", "home_team_id", "away_team_id", "status", "updated_at"],
+  "properties": {
+    "id": {"type": "string", "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}-[a-z0-9]+(?:-[a-z0-9]+)*-[a-z0-9]+(?:-[a-z0-9]+)*$"},
+    "kickoff": {"type": "string", "format": "date-time"},
+    "sport": {"type": "string", "enum": ["football", "basketball"]},
+    "league_id": {"type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"},
+    "home_team_id": {"type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"},
+    "away_team_id": {"type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"},
+    "status": {"type": "string", "enum": ["scheduled", "finished", "postponed", "cancelled"]},
+    "home_score": {"type": ["integer", "null"], "minimum": 0},
+    "away_score": {"type": ["integer", "null"], "minimum": 0},
+    "stadium_id": {"type": ["string", "null"], "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"},
+    "attendance": {"type": ["integer", "null"], "minimum": 0, "description": "上座人数，单位：人"},
+    "updated_at": {"type": "string", "format": "date"}
+  },
+  "additionalProperties": false
+}
