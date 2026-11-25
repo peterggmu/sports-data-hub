@@ -1,5 +1,19 @@
 # 数据字典与 ID 规则
 
+## 实体目录标准构成（normalized 目录规范）
+
+`data/normalized/` 下一个目录即一个数据集，目录名即数据集 slug，所有目录**物理平铺、不设领域子目录**。每个数据集目录必须满足以下标准构成：
+
+1. **`index.csv`（必备）**：该数据集的全量总表，一行一条记录、首行为表头；其数据行数与 `data/registry.json` 中对应数据集的 `record_count` 完全一致。
+2. **一个或多个 JSON 数据文件（必备）**：存放结构化记录。
+   - 独立实体类：一条记录一个 JSON，文件名与记录 `id` 一致；
+   - 事件 / 名册类（如投票、整批城市）：按事件或类别存为一个或多个 JSON 数组文件。
+3. **对应 JSON Schema（必备）**：在 `data/schemas/` 下有与该数据集对应的 `.schema.json`，所有 JSON 数据须通过其校验。
+4. **中央注册表登记（必备）**：该数据集的 `domain`、`record_count`、`normalized_dir`、`index_path`、`schema_path`、`raw_dir` 均在 `data/registry.json` 登记；不允许出现未登记的 normalized 数据集目录。
+5. **空目录占位**：尚未写入数据的预留目录，用一个空的 `.gitkeep` 文件占位以保留目录；正式入库后移除占位并补齐上述构成。当前 `normalized/` 下无空目录。
+
+raw 层对应约定：每个数据集在 `data/raw/self-collected/<数据集 slug>/` 下保存按日期命名的原始采集文件（如 `2026-11-25.tsv`），只追加、不覆盖，与 normalized 目录一一对应。
+
 ## 一、ID 规则
 
 - 所有 `id` 使用小写英文 slug，单词间用连字符 `-` 连接，例如 `j1-league`、`old-trafford`。
